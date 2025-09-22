@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Team | Bella Luna</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap');
+
+        :root {
+            --primary-color: #A94442; /* Bella Luna's signature red */
+            --secondary-color: #6c757d;
+            --background-light: #f8f9fa;
+            --text-dark: #212529;
+            --text-light: #ffffff;
+            --card-bg: #fff;
+            --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--background-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-image: url("images/bella.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--text-light);
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+            position: relative;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        .header-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            margin: 0;
+        }
+        .header-content p {
+            font-size: 1.25rem;
+            margin-top: 0.5rem;
+        }
+
+        .main-content {
+            padding: 4rem 1rem;
+            max-width: 960px;
+            margin: auto;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            box-shadow: var(--shadow-light);
+            padding: 2rem;
+            flex: 1 1 300px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--text-dark);
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        .card p {
+            font-size: 1rem;
+            color: var(--secondary-color);
+        }
+
+        .form-section {
+            background-color: var(--card-bg);
+            padding: 3rem;
+            border-radius: 10px;
+            box-shadow: var(--shadow-light);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1rem;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(169, 68, 66, 0.2);
+        }
+
+        .btn-submit {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn-submit:hover {
+            background-color: #923a38;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-content">
+            <h1>Join Our Family</h1>
+            <p>Become a part of the Bella Luna experience.</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section class="section">
+            <h2>Why Work With Us?</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Passion for Food</h3>
+                    <p>Be surrounded by the art of authentic Italian cuisine and a team that shares your love for food.</p>
+                </div>
+                <div class="card">
+                    <h3>Growth Opportunities</h3>
+                    <p>We believe in nurturing talent and offer clear paths for career advancement within our team.</p>
+                </div>
+                <div class="card">
+                    <h3>Warm Community</h3>
+                    <p>Join a team that feels like a family, dedicated to providing a genuine and memorable experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Current Openings</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>Chef de Partie</h3>
+                    <p>Experienced chef skilled in cooking to join our kitchen staff.</p>
+                </div>
+                <div class="card">
+                    <h3>Restaurant Manager</h3>
+                    <p>A leader with a passion for hospitality and a knack for creating exceptional dining experiences.</p>
+                </div>
+                <div class="card">
+                    <h3>Front of House Staff</h3>
+                    <p>Friendly and energetic individuals to greet guests and provide excellent service.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section form-section">
+            <h2>Apply Today</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="position">Position Applying For</label>
+                    <select id="position" name="position" required>
+                        <option value="">Select a position</option>
+                        <option value="Chef de Partie">Chef de Partie</option>
+                        <option value="Restaurant Manager">Restaurant Manager</option>
+                        <option value="Front of House Staff">Front of House Staff</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message / Resume Link</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about yourself and why you want to join our team."></textarea>
+                </div>
+                <a href="applicant.html" type="submit" class="btn-submit">Submit Application</button></a>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
